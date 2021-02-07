@@ -2,3 +2,5 @@ GoogleTests.java
  GoogleTests
 JUnit5Annotation.java
  JUnit5Annotation
+SelenideExample.java
+ SelenideExample
