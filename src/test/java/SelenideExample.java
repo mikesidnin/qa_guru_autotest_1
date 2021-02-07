@@ -48,21 +48,11 @@ public class SelenideExample {
 
         open("https://demoqa.com/text-box");
 
-        // $(by("id, class, type, etc","value"))
         $(by("id", "userName")).val(name);
-
-        //$x("//input[@id='userEmail']")
         $x("//input[@id='userEmail']").val(email);
-
-        //$(""); - default css selector. For id add "#..."
         $("#currentAddress").val(address);
-
-        //$("[id='permanentAddress']"); - default css selector. For id add "#..."
         $("[id='permanentAddress']").val(permanent);
 
-        //$(byClassName("form-control")).val("permanent address");
-
-        //Button click
         $("#submit").click();
 
         //Path 2---------------------------------------------------------------------------
