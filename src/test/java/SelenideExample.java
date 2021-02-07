@@ -2,6 +2,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Condition.text;
+import static com.codeborne.selenide.Condition.value;
 import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.Selenide.*;
 
@@ -34,11 +35,11 @@ public class SelenideExample {
         //Button click
         $("#submit").click();
 
-        //Path 1. Found bug here-----------------------------------------------------
+        //Path 1.--------------------------------------------------------------------
         $("#name").shouldHave(text(name));
         $("#email").shouldHave(text(email));
-        $("#currentAddress").shouldHave(text(address));
-        $("#permanentAddress").shouldHave(text(permanent));
+        $("#currentAddress").shouldHave(value(address));
+        $("#permanentAddress").shouldHave(value(permanent));
         //---------------------------------------------------------------------------
     }
     @Test
