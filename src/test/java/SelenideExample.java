@@ -34,11 +34,12 @@ public class SelenideExample {
         //Button click
         $("#submit").click();
 
-        //Path 1. Found bug here
+        //Path 1. Found bug here-----------------------------------------------------
         $("#name").shouldHave(text(name));
         $("#email").shouldHave(text(email));
         $("#currentAddress").shouldHave(text(address));
         $("#permanentAddress").shouldHave(text(permanent));
+        //---------------------------------------------------------------------------
     }
     @Test
     @DisplayName("straightforward")
@@ -63,11 +64,12 @@ public class SelenideExample {
         //Button click
         $("#submit").click();
 
-        //Path 2
+        //Path 2---------------------------------------------------------------------------
         $("#output").shouldHave(text(
                 "Name:" + name + "\n" +
                 "Email:" + email + "\n" +
                 "Current Address :" + address + "\n" +
                 "Permananet Address :" + permanent));
+        //----------------------------------------------------------------------------------
     }
 }
